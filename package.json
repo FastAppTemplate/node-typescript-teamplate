@@ -5,8 +5,8 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "dev:build": "tsc --project tsconfig.development.json",
-    "prd:build": "tsc",
+    "dev": "tsc --project tsconfig.development.json",
+    "build": "tsc",
     "lint": "eslint",
     "test": "jest",
     "cz": "cz"
