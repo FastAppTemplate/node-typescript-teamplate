@@ -19,7 +19,6 @@
   },
   "keywords": [],
   "author": "",
-  "license": "MIT",
   "devDependencies": {
     "@tsconfig/recommended": "^1.0.2",
     "@types/node": "^20.4.5",
