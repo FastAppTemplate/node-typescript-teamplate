@@ -1,5 +1,19 @@
 # Node TypeScript Template
 
+## Scaffolding you node project
+
+With NPM:
+
+```bash
+npm create @app-template/app@latest my-node-project -- --template node
+```
+
+With PNPM:
+
+```bash
+pnpm create @app-template/app@latest my-node-project --template node
+```
+
 ## How to use
 
 ### Development
