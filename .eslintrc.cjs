@@ -1,4 +1,4 @@
-export default {
+module.exports = {
   root: true,
   env: {
     node: true,
@@ -9,6 +9,5 @@ export default {
     "eslint:recommended",
     "plugin:@typescript-eslint/recommended",
     "prettier",
-    "prettier/@typescript-eslint",
   ],
 };
