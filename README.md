@@ -1,6 +1,6 @@
 # Node TypeScript Template
 
-## Scaffolding you node project
+## Scaffolding your node project
 
 With NPM:
 
