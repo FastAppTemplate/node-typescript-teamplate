@@ -1,5 +1,12 @@
 # Node TypeScript Template
 
+- [x] TypeScript
+- [ ] CommitLint
+- [x] Commitizen
+- [x] ESLint
+- [x] Prettier
+- [x] TypeDoc
+
 ## Scaffolding your node project
 
 With NPM:
