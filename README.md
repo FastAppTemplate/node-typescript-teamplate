@@ -1,7 +1,8 @@
 # Node TypeScript Template
 
 - [x] TypeScript
-- [ ] CommitLint
+- [x] Husky
+- [x] CommitLint
 - [x] Commitizen
 - [x] ESLint
 - [x] Prettier

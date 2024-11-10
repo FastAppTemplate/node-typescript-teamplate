@@ -16,11 +16,14 @@
     "lint": "eslint",
     "test": "node --enable-source-maps --test dist/",
     "test:watch": "node --enable-source-maps --test --watch dist/",
-    "cz": "cz"
+    "cz": "cz",
+    "prepare": "husky"
   },
   "keywords": [],
   "author": "",
   "devDependencies": {
+    "@commitlint/cli": "^19.5.0",
+    "@commitlint/config-conventional": "^19.5.0",
     "@eslint/js": "^9.11.1",
     "@tsconfig/recommended": "^1.0.7",
     "@types/node": "^22.9.0",
@@ -28,6 +31,7 @@
     "cz-conventional-changelog": "^3.3.0",
     "eslint": "^9.11.1",
     "globals": "^15.9.0",
+    "husky": "^9.1.6",
     "prettier": "^3.3.3",
     "typedoc": "^0.26.7",
     "typescript": "^5.6.2",

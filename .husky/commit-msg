@@ -1,0 +1,3 @@
+# https://commitlint.js.org/guides/local-setup.html
+
+pnpm --no -- commitlint --edit $1
