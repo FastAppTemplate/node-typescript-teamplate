@@ -3,7 +3,7 @@ import pluginJs from "@eslint/js";
 import tseslint from "typescript-eslint";
 
 export default [
-  { files: ["src/**/*.{js,mjs,cjs,ts}"] },
+  { files: ["src/**/*.ts"] },
   {
     ignores: ["node_modules/", "dist/", "coverage/"],
   },

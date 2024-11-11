@@ -10,12 +10,16 @@
     "types"
   ],
   "scripts": {
-    "dev": "tsc --project tsconfig.development.json --watch",
-    "build": "tsc --project tsconfig.production.json",
-    "build:doc": "typedoc --tsconfig tsconfig.production.json",
-    "lint": "eslint",
+    "start": "node --enable-source-maps dist/index.js",
+    "start:dev": "node --watch-path=./dist --enable-source-maps dist/index.js",
+    "build": "pnpm type:build && node scripts/swc.js",
+    "build:dev": "node scripts/swc.js --dev",
+    "type:build": "tsc --project tsconfig.prod.json --emitDeclarationOnly",
+    "type:check": "tsc --project tsconfig.prod.json --noEmit",
+    "doc:build": "typedoc --tsconfig tsconfig.prod.json",
     "test": "node --enable-source-maps --test dist/",
-    "test:watch": "node --enable-source-maps --test --watch dist/",
+    "test:dev": "node --enable-source-maps --test --watch dist/",
+    "lint": "eslint",
     "cz": "cz",
     "prepare": "husky"
   },
@@ -24,17 +28,20 @@
   "devDependencies": {
     "@commitlint/cli": "^19.5.0",
     "@commitlint/config-conventional": "^19.5.0",
-    "@eslint/js": "^9.11.1",
-    "@tsconfig/recommended": "^1.0.7",
+    "@eslint/js": "^9.14.0",
+    "@swc/cli": "^0.5.0",
+    "@swc/core": "^1.9.2",
+    "@tsconfig/recommended": "^1.0.8",
     "@types/node": "^22.9.0",
+    "chokidar": "^4.0.1",
     "commitizen": "^4.3.1",
     "cz-conventional-changelog": "^3.3.0",
-    "eslint": "^9.11.1",
-    "globals": "^15.9.0",
+    "eslint": "^9.14.0",
+    "globals": "^15.12.0",
     "husky": "^9.1.6",
     "prettier": "^3.3.3",
-    "typedoc": "^0.26.7",
-    "typescript": "^5.6.2",
-    "typescript-eslint": "^8.7.0"
+    "typedoc": "^0.26.11",
+    "typescript": "^5.6.3",
+    "typescript-eslint": "^8.13.0"
   }
 }
